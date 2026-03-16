@@ -1,0 +1,28 @@
+/* Centraliza a esfera na tela */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1a1a1a; /* Fundo escuro para destacar a esfera */
+}
+
+.esfera {
+    width: 250px;
+    height: 250px;
+    background-color: #3498db;
+    border-radius: 50%; /* Faz o elemento ficar redondo */
+    
+    /* Sombras para criar o efeito 3D de esfera */
+    box-shadow: inset -25px -25px 60px rgba(0, 0, 0, 0.5), 
+                0 0 30px rgba(255, 255, 255, 0.1);
+    
+    cursor: pointer;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.esfera:hover {
+    transform: scale(1.05); /* Aumenta levemente */
+}
